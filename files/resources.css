@@ -1,0 +1,407 @@
+/******************************************* Generic Start *******************************************/
+/* :root {
+  --main-bg-color: #00838f; cyan darken 3 - rgb(0,131,143)
+  --secondary-color: #ff9800;
+  --accent-color:#E0A800; 
+  --accent-color2: #01579b; rgb(1,87,155)
+  --grey-color: #E6E6E6;
+  --gap: 44px;
+  --font-sans-serif: Arial, Helvetica, sans-serif;
+} */
+body{
+	background: #fff!important;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.c-btn{
+	color: #00838f;
+	border:none!important;
+	background: none;
+	font-size: 1rem;
+	padding-left:0;
+}
+.spk-card-wrapper{
+	
+}
+.spk-card-title{
+	color: #01579b!important;	
+	font-weight: bold;
+	color: black!important;
+}
+.spk-card-body{
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	margin-bottom: 30px;
+	background: #fff;
+}
+.spk-card-wrapper li a{
+	text-decoration: none;
+	color: rgba(0,0,0,0.7);
+}
+.spk-card-wrapper li a:hover{
+	border-bottom: 2px solid #E0A800;
+	transition: 0s;
+}
+.spk-card-wrapper li:hover{
+	border-bottom: 1px solid red;
+}
+.spk-btn,.spk-btn-hide{
+	background: #01579b;
+	color: #fff;
+	text-transform: capitalize;
+}
+.spk-btn-sm{
+	background: #01579b;
+	background: rgba(1,87,155,0.8);
+	color: #fff;
+	text-transform: capitalize;
+	padding: 5px 10px;
+}
+.spk-btn:hover{
+	color: #fff;
+	font-weight: bold;
+}
+.spk-comp-header{
+	color: #01579b;
+	padding:22px 0;
+}
+.spk-comp-header p{
+	font-size: 1.2rem;
+}
+.spk-tab .nav-tabs .nav-link.active{
+	border: none;
+	border-bottom: 4px solid #E0A800;
+}
+.spk-tab .nav-tabs .nav-link{
+	color: #01579b;
+	font-weight: bold;
+	border: none;
+}
+.spk-tab ul{
+	padding: 12px 12px 0 12px;;
+}
+.spk-btn-hide{
+	background: #ff9800;
+	background: #E0A800;
+}
+.instr{
+	margin-top: 22px;
+}
+.instr p{
+	color: rgba(0,0,0,0.6);
+}
+.instr a{
+	color: rgb(0,0,0);
+	color: #ff9800;
+	margin-top: 22px;
+}
+.instr div{
+	color: rgb(0,0,0);
+	color: #ff9800;
+	margin-top: 22px;
+	border: 1px solid #01579b;
+	padding: 22px;
+}
+.pl15{
+	padding-left: 15px!important;
+} 
+.pl15 a{
+	color: rgba(0,0,0,0.7);
+}
+.top-accent{
+	border-top: 2px solid #E0A800;
+}
+.top-accent2{
+	border-top: 2px solid #01579b;
+}
+.top-main{
+	border-top: 2px solid #00838f;
+}
+.dashboard-header{
+	color: red;
+	font-size: 2rem;
+	border-bottom: 1px solid #E6E6E6;
+	margin-bottom: 30px;
+}
+.dashboard-header p{
+	color: #01579b;
+	font-size: 1.5rem;
+}
+/******************************************* Generic End *******************************************/
+
+/******************************************* Profile Start *******************************************/
+.profile-title{
+	color: #01579b!important;
+	font-size: 1.2rem;
+	margin: 12px 0;
+	font-weight: bold;
+}
+/******************************************* Profile End *******************************************/
+
+/* *******************************************navbar of all resources  start********************************************/
+.res-wrapper{
+	/* background: #fff!important;
+	background-color: #fff!important; */
+}
+.res-wrapper .main-panel{
+	/* background: #fff!important;
+	background-color: #fff!important; */
+}
+.res-header-nav{
+	background-color: #FBFBF9!important;
+	padding: calc(44px)  calc(44px/3)!important;	
+	box-shadow: none!important;
+	
+}
+.res-header-nav .res-info{
+	color: #01579b!important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+.res-header-nav .res-info span{
+	margin-right: 10px;
+	padding-right: 10px;
+}
+.res-header-nav .res-topic{
+	font-weight: bold;
+}
+/******************************************** navbar of all resources  ends********************************************/
+
+/******************************************** content of all resources  starts ********************************************/
+.content{
+	padding-top:10px!important;
+}
+.content h4{
+	font-size: 1rem;
+	
+}
+.res-topic-card{
+	padding-right: 20px;
+	border-right: 4px solid #E0A800;
+}
+.res-card-header{
+	padding: 10px;	
+	border: 1px solid #E6E6E6;
+	border-bottom: 2px solid #01579b;
+}
+.res-card-header div{
+	display: flex;
+}
+.res-card-header h3{
+	font-size: 2rem;
+	font-weight: bold;
+	color: rgb(0,0,0);
+	margin-right: calc(44px/2);
+}
+.res-card-header h4{
+	font-size: 1rem;
+	text-decoration: none;
+	float:right;
+}
+.res-card-header h4 a{
+	text-decoration: none;
+	color: #01579b;
+	border-bottom: 1px solid #E0A800;
+}
+#accordionDesc .a-header{
+	padding: 0!important;
+}
+#accordionDesc .a-card-body{
+	border: 1px solid #E6E6E6;
+	padding: calc(44px/2) 10px!important;
+}
+.res-map{
+	margin-top: 44px;
+	padding-top: calc(44px/2) !important;
+	padding-bottom: calc(44px/2) !important;
+	border: 1px solid #00838f;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.res-map img{
+	width: 100%;
+	
+}
+/******************************************** content of all resources  ends ********************************************/
+/******************************************** Resource - Tutorial Starts********************************************/
+
+.tutorial-item{
+	padding: calc(44px/2) 44px;
+	border-bottom: 1px solid #E6E6E6;
+}
+.tutorial-item .title{
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.tutorial-item .outline{
+	font-size: 0.9rem;
+	text-transform: capitalize;
+}
+
+/******************************************** Resource - Tutorial Ends********************************************/
+
+/******************************************** Resource - Link Starts********************************************/
+.res-card  .link-video{
+	padding: calc(44px/2) 44px;
+	border-bottom: 1px solid #E6E6E6;
+}
+.res-card .vid-content{
+	position: relative
+}
+.res-card .vid-src{
+	/* position: absolute;
+	bottom: 0;
+	margin-top: 20px; */
+}
+.res-card .heading span{
+	float: right;
+}
+.res-card .heading {
+	display: flex;
+	flex-direction: column;
+	justigy-content:flex-end;
+	border-right: 1px solid #E6E6E6;
+	font-weight: bold;
+}
+.res-card .link-item{
+	padding: calc(44px/2) 44px;
+	color: rgb(0,0,0,0.9);
+	border-bottom: 1px solid #E6E6E6;
+}
+.res-card .link-txt{
+	font-size: 0.9rem;
+	text-decoration: underline;
+	font-style: italic;
+}
+.res-card .doc-desc{
+	color: rgb(0,0,0);
+	margin-bottom: 10px;
+}
+.res-card .doc-desc svg{
+	margin-right: 1rem;
+	color: #00838f;
+}
+.res-card .doc-item{
+	border-bottom: 1px solid #E6E6E6;
+	padding: calc(44px/2) 44px;
+}
+.res-card .doc-item .doc-link a{
+	color: #00838f;
+}
+.res-card #myTab{
+	border: none;
+}
+.res-card  ul li a{
+	border: none;
+	color: #01579b;
+}
+.res-card #myTab ul li a:active{
+	border: none;
+	border-bottom : 4px solid #01579b;
+	color: #E0A800!important;
+}
+.res-card .nav-tabs .nav-link{
+	border: none;
+}
+.res-card .nav-tabs .nav-link.active{
+	border-bottom : 4px solid #E0A800;
+	color: #01579b;
+}
+.res-card .lesson-plan a{
+	color: rgb(0,0,0)!important;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+#lessonTable, #quizTable{
+	margin: auto;
+}
+#lessonTable>thead>tr>th ,#quizTable>thead>tr>th{
+    color: #00838f;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: bold;   
+}
+#lessonTable>tbody>tr>td, #quizTable>tbody>tr>td{
+    color: rgb(0,0,0);
+    text-transform: capitalize;
+    font-size: 1rem;     
+    font-family: Arial, Helvetica, sans-serif;
+}
+#lessonTable .f-download, #quizTable .f-download{
+	font-size: 1.2rem;
+	color: #00838f;
+}
+.phet-item{
+	border-bottom: 1px solid #E6E6E6;
+	padding: calc(44px/2) 44px;
+}
+.phet-item .content{
+	position: relative
+}
+.phet-item .content .phet-src{
+	/* position: absolute;
+	bottom: 0; */
+}
+/******************************************** Resource - Link Ends********************************************/
+/*--------------------------------------- fixes ---------------------------------------*/
+.table>tbody>tr>td{
+	word-break: break-all;
+}
+/******************************************** DataTable Start ********************************************/
+
+.pagination .page-item.active .page-link{
+	background-color: #00838f;!important;
+}
+/******************************************** DataTable Ends ********************************************/
+/******************************************** Fontawesome Starts ********************************************/
+.fa-home{
+	color: #00838f;
+	color: #01579b;
+}
+/******************************************** Fontawesome Ends ********************************************/
+
+/*--------------------------------------- media queries ---------------------------------------*/
+
+/*  Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+	.res-card-header h3{
+		font-size: 1.2rem;
+	}
+	.tutorial-item{
+		padding-left: 0;
+		padding-right: 0;
+		
+	}
+	
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+	
+	
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { }
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+		
+	
+	}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }

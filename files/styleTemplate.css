@@ -1,0 +1,97 @@
+
+
+.r-icon{
+	font-size: 1.5rem;
+	/* border-right: 1px solid black; */
+	padding-right: 10px;
+	margin-right: 10px;
+	/* color: #ff9800; */
+	color: #fff;
+}
+
+.status{
+	color:green;
+	text-align:center;
+}
+
+.error{
+	color:red;
+	text-align:center;
+}
+
+.modalAlign{
+	text-align:center;
+}
+
+.label-align{
+	margin:10px;
+}
+
+#true{
+	height: 20px;
+  	width: 20px;
+  	background-color: green;
+  	border-radius: 50%;
+}
+
+#false{
+	height: 20px;
+  	width: 20px;
+  	background-color: red;
+  	border-radius: 50%;
+}
+
+#imp-info{
+	color:red;
+}
+
+.viewButton{
+	font-size: 15px;
+	border-radius: 35px;
+	background-color: #3f3f3f;
+	color: #ffffff;	
+	padding: 16px 30px;
+}
+
+.testimonial-item {
+    clear: both;
+    margin: 40px 0;
+}
+
+.testimonial-content {
+    overflow: hidden;
+    padding: 20px;
+    border: 1px solid #cdd4b8;
+    line-height: 22px;
+    background: white;
+}
+
+.testimonial-content .message {
+    text-align: justify;
+}
+
+
+.testimonials-details {
+    position: relative;
+}
+
+.testimonials-caret {
+    position: absolute;
+    top: -1px;
+    left: 5px;
+    width: 50px;
+    height: 32px;
+    background: url('../Images/testimonials-caret.png') no-repeat;
+}
+
+.user-details {
+    padding-top: 16px;
+    padding-left: 70px;
+}
+
+
+
+input[type=checkbox]{
+	position:unset !important;
+}
+
