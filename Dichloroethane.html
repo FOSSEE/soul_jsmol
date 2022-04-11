@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
+    <link rel="stylesheet" href="files/bootstrap.css">
+    <link rel="stylesheet" href="files/light-bootstrap-dashboard.css">
+    <link rel="stylesheet" href="files/styleTemplate.css">
+    <link rel="stylesheet" href="files/resources.css">
+    <title>Structure of an Atom</title>
+    <script src="jmol-14.32.35/jsmol/JSmol.min.js"></script>
+    <script src="jmol-14.32.35/jsmol/js/Jmol2.js"></script>
+    <script>jmolInitialize("jmol-14.32.35/jsmol");</script>
+    <style>
+      #structures {
+        border-right: 2px solid #01579b;
+        height: 100vh;
+        overflow: scroll;
+        scroll-behavior: smooth;
+      }
+      #structure_content {
+        /* border: 1px solid green; */
+        height: 100vh;
+        overflow: scroll;
+        scroll-behavior: smooth;
+      }
+      html {
+        scroll-behavior: smooth!important;
+      }
+      .desc{
+        border-bottom: 2px solid rgba(0,0,0,0.5);
+        padding-bottom: 16px;
+        margin-bottom: 16px; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper res-wrapper">
+      <div class="main-panel">
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="res-card">
+                  <div class="res-card-header">
+                    <div>
+                      <h3 class="res-topic-card"><span>Structure of an Atom</span></h3>
+                      <h3>Jmol</h3>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-5 py-2" id="structures">
+                      <div>
+                        <p><b>Note</b> : To scroll over the structure &amp; description, ensure mouse is placed over grey area</p>
+                      </div>
+                      <div class="p-2 desc" id="s1">
+                        <p><a href="#d1">Structure 1 (Dichloroethane-eclipse.mol)</a></p>
+                        <div>
+                          <script>let a_myJmol = jmolApplet(400,"load resources/Dichloroethane-eclipse.mol","0");</script>
+                        </div>
+                        <div>
+                          <script>
+                            Jmol.jmolRadioGroup(a_myJmol, [
+                                                            ["spacefill off",  "off"],
+                                                            ["spacefill 23%",  "23%", "checked"],
+                                                            ["spacefill 100%", "100%"]
+                                                          ]);
+                          </script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script type="text/javascript">Jmol.jmolCheckbox(a_myJmol, "spin on", "spin off", "spin");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script>Jmol.jmolButton(a_myJmol, "reset", "Reset to original orientation");</script>
+                        </div>
+                        <div>
+                        </div>         		
+                      </div>
+                      <div class="p-2 desc" id="s2">
+                        <p><a href="#d2">Structure 2 (Dichloroethane-gauche.mol)</a></p>
+                        <div>
+                          <script>let b_myJmol = jmolApplet(400,"load resources/Dichloroethane-gauche.mol","1");</script>
+                        </div>
+                        <div>
+                          <script>
+                            Jmol.jmolRadioGroup(b_myJmol, [
+                                                            ["spacefill off",  "off"],
+                                                            ["spacefill 23%",  "23%", "checked"],
+                                                            ["spacefill 100%", "100%"]
+                                                          ]);
+                          </script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script type="text/javascript">Jmol.jmolCheckbox(b_myJmol, "spin on", "spin off", "spin");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script>Jmol.jmolButton(b_myJmol, "reset", "Reset to original orientation");</script>
+                        </div>         		
+                      </div>
+                      <div class="p-2 desc" id="s3">
+                        <p><a href="#d3">Structure 3 (Dichloroethane-staggered.mol)</a></p>
+                        <div>
+                          <script>let c_myJmol = jmolApplet(400,"load resources/Dichloroethane-staggered.mol","2");</script>
+                        </div>
+                        <div>
+                          <script>
+                            Jmol.jmolRadioGroup(c_myJmol, [
+                                                            ["spacefill off",  "off"],
+                                                            ["spacefill 23%",  "23%", "checked"],
+                                                            ["spacefill 100%", "100%"]
+                                                          ]);
+                          </script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script type="text/javascript">Jmol.jmolCheckbox(c_myJmol, "spin on", "spin off", "spin");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script>Jmol.jmolButton(c_myJmol, "reset", "Reset to original orientation");</script>
+                        </div>         		
+                      </div>
+                    </div>
+                    <div class="col-7 py-2" id="structure_content">
+                      <div style="margin-top:100px;" id="d1">
+                        <p>
+                          <a href="#s1">Structure 1 (Dichloroethane-eclipse.mol)</a>
+                          Structures that can be interconverted simply by rotation about single bonds are conformers.
+
+The energy barrier to the rotation of C-C single bond  in ethane molecule at room temperature in gas phase is about 12.5 KJ/mol/3.0 Kcal/mol which is very similar to ethane , 12.1 KJ/mol/2.9 Kcal/mol.
+
+1-2 dichloroethane exists in 3 major conformations: staggered , gauche and eclipse conformations. Look at the viewes of molecules to see why the conformations have these names. (click on end-on view button).
+In eclipse conformation the one chlorine atom in the front eclipses the other chlorine atom which is on the back, torsional angle is 0 degrees.In eclipsed conformation  the torsional angle is 0, it has highest potential  energy , hence the least stable conformation.
+                        </p>
+                      </div>
+                      <div style="margin-top:100px;" id="d2">
+                        <p>
+                          <a href="#s2">Structure 2 (Dichloroethane-gauche.mol)</a>
+                          In eclipsed form, the front and rear carbons are superimposing each other, torsional angle is 0 degrees. In this form, the atoms are very close to each other which results in the electrostatic repulsion between the electronic clouds of two bonded molecules.Hence it is the least stable conformation.
+                        </p>
+                      </div>
+                      <div style="margin-top:100px;" id="d3">
+                        <p>
+                          <a href="#s3">Structure 3 (Dichloroethane-staggered.mol)</a>
+                          In the staggered conformation the two chlorine atoms appear to be facing opposite directions,  torsional angle is 180 degrees.The staggered conformation is lower in energy than eclipse by 12.1 KJ/mol, this is the value of rotational barrier.
+                          In gaseaous state  at 22 degrees centigarde, 73% of staggered form exitsts when compared to 67% for n-butane. The higher stability of staggered /anti conformer is because of  steric factor and also strong electrostaic interaction, strong dipole-dipole repulsion in gauche conformation.
+
+However, in polar solvents, the gauche conformer population increases due to decrease in the coulumbic interaction of dipoles in the polar solvent. The conformer with high dipole moment solvates in polar solvent and gain more energy, therefore the  gauche conformer population increases.
+
+In liquid state both anti and gauche conformers are almost equally populated.
+Why is the eclipsed conformation higher in energy than tha staggered conformation.The steric factors make up to only 10% of the rotational barrier, The two more important factors are: Repulsions between negatively charged electrons in the C-H bonds, this is energitically unfovorable.Molecular orbital interaction between a populated C-H σ bond and the empty C-H σ* orbital on the neighbouring carbon. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  COMMON CODE FOR LIBRARY ADDED -->
+    <div>
+      <!--   Core JS Files   -->
+      <script src="files/popper.js" type="text/javascript"></script>
+      <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+      <script src="files/bootstrap-switch.js"></script>
+      <!--  Chartist Plugin  -->
+      <script src="files/chartist.js"></script>
+      <!--  Notifications Plugin    -->
+      <script src="files/bootstrap-notify.js"></script>
+      <!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
+      <script src="files/light-bootstrap-dashboard.js" type="text/javascript"></script>
+      <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+      <script src="files/demo.js"></script>
+      <script src="files/datatables.js"></script>
+      <script src="files/ajaxPoperty.js"></script>
+      <script src="files/bootstrap.js"></script>
+    </div>
+  </body>
+</html>
