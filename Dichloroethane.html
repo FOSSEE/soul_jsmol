@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="files/light-bootstrap-dashboard.css">
     <link rel="stylesheet" href="files/styleTemplate.css">
     <link rel="stylesheet" href="files/resources.css">
-    <title>Structure of an Atom</title>
+    <title>Conformations of 1,2-Dichloroethane</title>
     <script src="jmol-14.32.35/jsmol/JSmol.min.js"></script>
     <script src="jmol-14.32.35/jsmol/js/Jmol2.js"></script>
     <script>jmolInitialize("jmol-14.32.35/jsmol");</script>
@@ -46,14 +46,14 @@
                 <div class="res-card">
                   <div class="res-card-header">
                     <div>
-                      <h3 class="res-topic-card"><span>Structure of an Atom</span></h3>
+                      <h3 class="res-topic-card"><span>Conformations of 1,2-Dichloroethane</span></h3>
                       <h3>Jmol</h3>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-5 py-2" id="structures">
                       <div>
-                        <p><b>Note</b> : To scroll over the structure &amp; description, ensure mouse is placed over grey area</p>
+                        <p><b>Note</b> : 3D models of conformers for 1,2-dichloroethane are created using Jmol Application version 14.31.32. To use the models interactively, place the mouse over the model, hold the left mouse button, move the mouse to rotate the model and view the model from all angles. Right-click to open the context-menu and explore the features to measure the bond-length, bond-angle, dihedral angle, change style, color of atoms bonds and many more features listed.</p>
                       </div>
                       <div class="p-2 desc" id="s1">
                         <p><a href="#d1">Structure 1 (Dichloroethane-eclipse.mol)</a></p>
@@ -65,7 +65,9 @@
                             Jmol.jmolRadioGroup(a_myJmol, [
                                                             ["spacefill off",  "off"],
                                                             ["spacefill 23%",  "23%", "checked"],
-                                                            ["spacefill 100%", "100%"]
+                                                            ["spacefill 100%", "100%"],
+                                                            ["select connected(C2) and not C1; rotateSelected {C1} {C2} 120 10", "anticlinal"]
+                                                            
                                                           ]);
                           </script>
                           <span>&nbsp;&nbsp;</span>
@@ -119,30 +121,24 @@
                       <div style="margin-top:100px;" id="d1">
                         <p>
                           <a href="#s1">Structure 1 (Dichloroethane-eclipse.mol)</a>
-                          Structures that can be interconverted simply by rotation about single bonds are conformers.
-
-The energy barrier to the rotation of C-C single bond  in ethane molecule at room temperature in gas phase is about 12.5 KJ/mol/3.0 Kcal/mol which is very similar to ethane , 12.1 KJ/mol/2.9 Kcal/mol.
-
-1-2 dichloroethane exists in 3 major conformations: staggered , gauche and eclipse conformations. Look at the viewes of molecules to see why the conformations have these names. (click on end-on view button).
-In eclipse conformation the one chlorine atom in the front eclipses the other chlorine atom which is on the back, torsional angle is 0 degrees.In eclipsed conformation  the torsional angle is 0, it has highest potential  energy , hence the least stable conformation.
+                          Structures that can be interconverted by rotation about single bonds are conformers. 
+The energy barrier to the rotation of C-C single bond in 1,2-dichloroethane molecule at room temperature in gas phase is about 12.5 KJ/mol or 3.0 Kcal/mol which is very similar to ethane, 12.1 KJ/mol or 2.9 Kcal/mol.
+The 3 significant conformations that 1,2-dichloroethane can adopt as the C-C bond is rotated in 60 degree intervals are: eclipsed, gauche and staggered. These conformations have different names. Look at the 3D models of molecules to see why the conformations have these names.
+In the eclipse conformation, one chlorine atom in the front eclipses the rear second chlorine atom, the front and rear carbons are superimposing each other, dihedral angle between two chlorine atoms is 0 degrees. The dihedral angle is also known as torsional angle. In this conformation, the atoms are very close to each other which results in the electrostatic repulsion between the electronic clouds of two bonded molecules. The dipole-diploe repulsions are strongest. It has the highest potential energy, hence it is the least stable conformation.
                         </p>
                       </div>
                       <div style="margin-top:100px;" id="d2">
                         <p>
                           <a href="#s2">Structure 2 (Dichloroethane-gauche.mol)</a>
-                          In eclipsed form, the front and rear carbons are superimposing each other, torsional angle is 0 degrees. In this form, the atoms are very close to each other which results in the electrostatic repulsion between the electronic clouds of two bonded molecules.Hence it is the least stable conformation.
+                          In the gauche conformation the two cholrine atoms are spaced apart with a dihedral angle of 60 degrees. It is more stable than the eclipsed conformation. This conformer exits in considerable quantities in the liquid state and in polar solvents. In polar solvents, the gauche conformer population increases due to decrease in the coulumbic interaction of dipoles in the polar solvent. The gauche conformer with high dipole moment solvates in polar solvent, therefore its population increases.
+In liquid state both staggered and gauche conformers are almost equally populated.
                         </p>
                       </div>
                       <div style="margin-top:100px;" id="d3">
                         <p>
                           <a href="#s3">Structure 3 (Dichloroethane-staggered.mol)</a>
-                          In the staggered conformation the two chlorine atoms appear to be facing opposite directions,  torsional angle is 180 degrees.The staggered conformation is lower in energy than eclipse by 12.1 KJ/mol, this is the value of rotational barrier.
-                          In gaseaous state  at 22 degrees centigarde, 73% of staggered form exitsts when compared to 67% for n-butane. The higher stability of staggered /anti conformer is because of  steric factor and also strong electrostaic interaction, strong dipole-dipole repulsion in gauche conformation.
-
-However, in polar solvents, the gauche conformer population increases due to decrease in the coulumbic interaction of dipoles in the polar solvent. The conformer with high dipole moment solvates in polar solvent and gain more energy, therefore the  gauche conformer population increases.
-
-In liquid state both anti and gauche conformers are almost equally populated.
-Why is the eclipsed conformation higher in energy than tha staggered conformation.The steric factors make up to only 10% of the rotational barrier, The two more important factors are: Repulsions between negatively charged electrons in the C-H bonds, this is energitically unfovorable.Molecular orbital interaction between a populated C-H σ bond and the empty C-H σ* orbital on the neighbouring carbon. 
+                          In the staggered conformation (anti conformation) the two chlorine atoms appear to be facing opposite directions, dihedral angle is 180 degrees. The staggered conformation is lower in energy than eclipse by 12.1 KJ/mol, this is the value of rotational barrier.
+                          In gaseous state  at 22 degrees centigrade, 73% of 1,2-diclorobutane exists in staggered form when compared to 67% for n-butane. The higher stability of staggered conformer, also known as anti conformer, is because the two bulky chlorine atoms are furthest from each other. In the staggered conformation there may be some stabilizing interaction between the populated C-H σ bonding orbital on one carbon atom and the empty C-H σ* anti-bonding orbital on the neighbouring carbon. This stabilization is greatest when the two orbitals are parallel, this is present only in the staggered conformation. 
                         </p>
                       </div>
                     </div>
