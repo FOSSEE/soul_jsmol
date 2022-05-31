@@ -62,18 +62,19 @@
                         </div>
                         <div>
                           <script>
-                            Jmol.jmolRadioGroup(a_myJmol, [
-                                                            ["spacefill off",  "off"],
+                            Jmol.jmolRadioGroup(a_myJmol, [         
+                                                            ["background black", "black background"],
                                                             ["spacefill 23%",  "23%", "checked"],
-                                                            ["spacefill 100%", "100%"],
-                                                            ["select connected(C2) and not C1; rotateSelected {C1} {C2} 120 10", "anticlinal"]
+                                                            ["select connected(C2) and not C1; rotateSelected {C1} {C2} 120 10", "anticlinal"],
+                                                             ["spacefill 100%", "100%"],
+                                                             ["spacefill off",  "off"]
                                                             
                                                           ]);
                           </script>
                           <span>&nbsp;&nbsp;</span>
                           <script type="text/javascript">Jmol.jmolCheckbox(a_myJmol, "spin on", "spin off", "spin");</script>
                           <span>&nbsp;&nbsp;</span>
-                          <script>Jmol.jmolButton(a_myJmol, "reset", "Reset to original orientation");</script>
+                          <script>Jmol.jmolButton(a_myJmol, "spacefill 23%; select connected(C2) and not C1; rotateSelected {C1} {C2} 240 30;", "Reset to original orientation");</script>
                         </div>
                         <div>
                         </div>         		
@@ -86,15 +87,16 @@
                         <div>
                           <script>
                             Jmol.jmolRadioGroup(b_myJmol, [
-                                                            ["spacefill off",  "off"],
+                                                            ["background black", "black background"],
                                                             ["spacefill 23%",  "23%", "checked"],
-                                                            ["spacefill 100%", "100%"]
+                                                            ["spacefill 100%", "100%"],
+                                                            ["spacefill off",  "off"]
                                                           ]);
                           </script>
                           <span>&nbsp;&nbsp;</span>
                           <script type="text/javascript">Jmol.jmolCheckbox(b_myJmol, "spin on", "spin off", "spin");</script>
                           <span>&nbsp;&nbsp;</span>
-                          <script>Jmol.jmolButton(b_myJmol, "reset", "Reset to original orientation");</script>
+                          <script>Jmol.jmolButton(b_myJmol, "spacefill 23%", "Reset to original orientation");</script>
                         </div>         		
                       </div>
                       <div class="p-2 desc" id="s3">
@@ -105,15 +107,16 @@
                         <div>
                           <script>
                             Jmol.jmolRadioGroup(c_myJmol, [
-                                                            ["spacefill off",  "off"],
+                                                            ["background black", "black background"],
                                                             ["spacefill 23%",  "23%", "checked"],
-                                                            ["spacefill 100%", "100%"]
+                                                            ["spacefill 100%", "100%"],
+                                                            ["spacefill off",  "off"]
                                                           ]);
                           </script>
                           <span>&nbsp;&nbsp;</span>
                           <script type="text/javascript">Jmol.jmolCheckbox(c_myJmol, "spin on", "spin off", "spin");</script>
                           <span>&nbsp;&nbsp;</span>
-                          <script>Jmol.jmolButton(c_myJmol, "reset", "Reset to original orientation");</script>
+                          <script>Jmol.jmolButton(c_myJmol, "spacefill 23%", "Reset to original orientation");</script>
                         </div>         		
                       </div>
                     </div>
