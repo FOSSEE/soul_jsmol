@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
+    <link rel="stylesheet" href="files/bootstrap.css">
+    <link rel="stylesheet" href="files/light-bootstrap-dashboard.css">
+    <link rel="stylesheet" href="files/styleTemplate.css">
+    <link rel="stylesheet" href="files/resources.css">
+    <title>Conformations of Disubstituted Cyclohexanes</title>
+    <script src="jmol-14.32.35/jsmol/JSmol.min.js"></script>
+    <script src="jmol-14.32.35/jsmol/js/Jmol2.js"></script>
+    <script>jmolInitialize("jmol-14.32.35/jsmol");</script>
+    <style>
+      #structures {
+        border-right: 2px solid #01579b;
+        height: 100vh;
+        overflow: scroll;
+        scroll-behavior: smooth;
+      }
+      #structure_content {
+        /* border: 1px solid green; */
+        height: 100vh;
+        overflow: scroll;
+        scroll-behavior: smooth;
+      }
+      html {
+        scroll-behavior: smooth!important;
+      }
+      .desc{
+        border-bottom: 2px solid rgba(0,0,0,0.5);
+        padding-bottom: 16px;
+        margin-bottom: 16px; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper res-wrapper">
+      <div class="main-panel">
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="res-card">
+                  <div class="res-card-header">
+                    <div>
+                      <h3 class="res-topic-card"><span>Conformations of Disubstituted Cyclohexanes</span></h3>
+                      <h3>Jmol</h3>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-5 py-2" id="structures">
+                      <div>
+                        <p><b>Note</b> : 3D models are created using Jmol Application version 14.31.32. To use the models interactively, place the mouse over the model, hold the left mouse button, move the mouse to rotate the model and view the model from all angles. Right-click to open the context-menu and explore the features to measure the bond-length, bond-angle, dihedral angle, change style, color of atoms bonds and many more features listed.</p>
+                      </div>
+                      <div class="p-2 desc" id="s1">
+                        <p><a href="#d1">Structure 1 (cis12DMCH.mol)</a></p>
+                        <div>
+                          <script>let a_myJmol = jmolApplet(400,"load resources/cis12DMCH.mol","0");</script>
+                        </div>
+                        <div>
+                          <script>
+                            Jmol.jmolRadioGroup(a_myJmol, [
+                                                            ["spacefill 23%", "spacefill 23%", "checked"],
+                                                            ["invertselected @1",  "trans ee"],
+                                                            ["invertselected @1; invertselected @2",  "trans aa"],
+                                                            ["set bondmode OR;select atomno=7, atomno=12, atomno=16, atomno=10, atomno=13, atomno=18; color bonds yellow; select atomno=19, atomno=20, atomno=21, atomno=22, atomno=23,atomno=24; color bonds white" , " color axial bonds"],
+                                                            ["set bondmode OR; select atomno=8, atomno=9, atomno=11, atomno=14, atomno=15, atomno=17; color bonds cyan;" , "color equatorial bonds"]
+                                                          ]);
+                          </script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script type="text/javascript">Jmol.jmolCheckbox(a_myJmol, "spin on", "spin off", "spin");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script type="text/javascript">Jmol.jmolCheckbox(a_myJmol, "draw plane1 400 (atomno=2)(atomno=4)(atomno=6)", "draw off", "show plane");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script type="text/javascript">Jmol.jmolCheckbox(a_myJmol, "background black", "background white", "background");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script type="text/javascript">Jmol.jmolCheckbox(a_myJmol, "label on: color label red", "label off", "label");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script>Jmol.jmolButton(a_myJmol, "invertselected @2; select all; color bonds grey", "Reset to original orientation");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script>Jmol.jmolButton(a_myJmol, "invertselected @1; invertselected @2; delay 1; loop 2;", "cis meso animation");</script>
+                          <script>Jmol.jmolButton(a_myJmol, "quit", "animation off");</script>
+                        </div>
+                        <div>
+                        </div>         		
+                      </div>
+                      <div class="p-2 desc" id="s2">
+                        <p><a href="#d2">Structure 2 (cis13DMCH.mol)</a></p>
+                        <div>
+                          <script>let b_myJmol = jmolApplet(400,"load resources/cis13DMCH.mol","1");</script>
+                        </div>
+                        <div>
+                          <script>
+                            Jmol.jmolRadioGroup(b_myJmol, [
+                                                            ["spacefill 23%", "spacefill 23%", "checked"], 
+                                                            ["invertselected @1; invertselected @3", "cis ee"],
+                                                            ["invertselected @1", "trans ae"],
+                                                            ["set bondmode OR; select atomno=7, atomno=11, atomno=16, atomno=10, atomno=13, atomno=18; color bonds yellow; select atomno=19, atomno=20, atomno=21; color bonds white" , "show axial bonds"],
+                                                            ["set bondmode OR; select atomno=8, atomno=9, atomno=12, atomno=14, atomno=15, atomno=17; color bonds cyan; select atomno=22, atomno=23, atomno=24; color bonds white" , "show equatorial bonds"]
+                                                          ]);
+                          </script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script type="text/javascript">Jmol.jmolCheckbox(b_myJmol, "spin on", "spin off", "spin");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script type="text/javascript">Jmol.jmolCheckbox(b_myJmol, "draw plane1 400 (atomno=2)(atomno=4)(atomno=6)", "draw off", "show plane");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script type="text/javascript">Jmol.jmolCheckbox(b_myJmol, "label on; color label red", "label off", "label");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script type="text/javascript">Jmol.jmolCheckbox(b_myJmol, "background black", "background white", "background");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script>Jmol.jmolButton(b_myJmol, "invertselected @3; select all; color bonds grey", "Reset to original orientation");</script>
+                        </div>         		
+                      </div>
+                      <div class="p-2 desc" id="s3">
+                        <p><a href="#d3">Structure 3 (cis14DMCH.mol)</a></p>
+                        <div>
+                          <script>let c_myJmol = jmolApplet(400,"load resources/cis14DMCH.mol","2");</script>
+                        </div>
+                        <div>
+                          <script>
+                            Jmol.jmolRadioGroup(c_myJmol, [
+                                                            ["spacefill 23%" , "spacefill 23%", "checked"],  
+                                                            ["invertselected @1", "trans ee"],
+                                                            ["invertselected @1; invertselected @4;", "trans aa"],
+                                                            ["set bondmode OR; select atomno=7, atomno=12, atomno=16, atomno=9, atomno=14, atomno=18; color bonds yellow; select atomno=19, atomno=20, atomno=21, atomno=22, atomno=23, atomno=24; color bonds white" , "show axial bonds"],
+                                                            ["set bondmode OR; select atomno=8, atomno=10, atomno=11, atomno=13, atomno=15, atomno=17; color bonds cyan;" , "show equatorial bonds"]
+                                                          ]);
+                          </script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script type="text/javascript">Jmol.jmolCheckbox(c_myJmol, "spin on", "spin off", "spin");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script type="text/javascript">Jmol.jmolCheckbox(c_myJmol, "draw plane1 400 (atomno=2)(atomno=4)(atomno=6)", "draw off", "show plane");</script>
+                          <script type="text/javascript">Jmol.jmolCheckbox(c_myJmol, "draw pointgroup", "draw off", "show symmetry");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script type="text/javascript">Jmol.jmolCheckbox(c_myJmol, "label on; color label red", "label off", "label");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script type="text/javascript">Jmol.jmolCheckbox(c_myJmol, "background black", "background white", "background");</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script>Jmol.jmolButton(c_myJmol, "invertselected @ 4; select all; color bonds grey", "Reset to original orientation");</script>
+                        </div>         		
+                      </div>
+                    </div>
+                    <div class="col-7 py-2" id="structure_content">
+                      <div style="margin-top:100px;" id="d1">
+                        <p>
+                          <a href="#s1">Structure 1 (cis12DMCH.mol)</a>
+                          Dimethylcyclohexanes (1,2-, 1,3-, and 1,4-) exist as cis and trans isomers. Due to steric factor one isomer is preferred over the other. The chemical reactivity of these compounds also differ due to the different sterochemistry of the groups in the molecules.  cis 1,2 dimethylcyclohexane has one methyl group in equatorial position and one methyl in axial position (a,e). The axial methyl group creates 1,3 diaxial steric interactions, this makes it unstable. The rapid interconversion of both forms of cis isomer (a,e and e,a) creates a meso form. Hence cis 1,2-dimethylcyclohexane is achiral. The trans 1,2 dimethylcyclohexane, one chair conformer has both methyl groups axial (a,a) and the other conformer has both methyl groups equatorial (e,e). The  most stable conformer is the one which has both the methyl groups in the equatorial position (e,e). Both the trans forms, a,a and e,e are chiral. Each axial methyl group contributes about 1.74 kcal/mol towards steric energy of the molecule, therefore  the enegy of trans a,a conformer is about 3.48 kcal/mol. The trans e,e conformer has two methyls gauche to each other, the steric energy therefore will be that of gauche butane, 0.74 kcal/mol. Therefore The trans e,e conformer has (3.48-0.74 = 2.74) 2.74 kcal/mol less steric energy than a,a isomer.
+                        </p>
+                      </div>
+                      <div style="margin-top:100px;" id="d2">
+                        <p>
+                          <a href="#s2">Structure 2 (cis13DMCH.mol)</a>
+                          The cis and trans isomers of 1,3-dimethylcyclohexane exist in single conformations. For the trans isomer with one axial and one equatorial methyl groups (a,e) the two possible conformations (a,e and e,a) are supeposable. The cis isomer can exist in two conformations, one with both methyl groups axial (a,a) and the other with both methyl groups equatorial (e,e). Due to two synaxial methyl groups the a,a conformer is very unstable. Hence predominantly it exists in e,e conformation. The  cis 1,3-dimethylcyclohexane e,e is achiral. The trans isomer is chiral.
+                        </p>
+                      </div>
+                      <div style="margin-top:100px;" id="d3">
+                        <p>
+                          <a href="#s3">Structure 3 (cis14DMCH.mol)</a>
+                          The cis and trans isomes of 1,4-dimethylcyclohexane are achiral. They have mirror plane symmetry. For the cis isomer one methyl is axial and another is equatorial (a,e). The two conformers  are indistinguishable, in equimolar proportion and are superposable. The trans isomer consists of two conformers, less abuntant (0.3%) a,a where both the methyl groups are axial and more predominant (99.7%) e,e, both the methyls are equatorial. Each axial methyl group contributes to about 1.74 kcal/mol towards steric energy of the molecule, therefore  the enegy level of a,a isomer is about 3.48 kcal/mol more than the e,e conformer.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  COMMON CODE FOR LIBRARY ADDED -->
+    <div>
+      <!--   Core JS Files   -->
+      <script src="files/popper.js" type="text/javascript"></script>
+      <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+      <script src="files/bootstrap-switch.js"></script>
+      <!--  Chartist Plugin  -->
+      <script src="files/chartist.js"></script>
+      <!--  Notifications Plugin    -->
+      <script src="files/bootstrap-notify.js"></script>
+      <!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
+      <script src="files/light-bootstrap-dashboard.js" type="text/javascript"></script>
+      <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+      <script src="files/demo.js"></script>
+      <script src="files/datatables.js"></script>
+      <script src="files/ajaxPoperty.js"></script>
+      <script src="files/bootstrap.js"></script>
+    </div>
+  </body>
+</html>, atomno=20, atomno=21; color bonds white
